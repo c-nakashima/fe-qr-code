@@ -1,0 +1,88 @@
+/* CSS Variables */
+:root {
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+  --white: #ffffff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Text styles -- align with Figma's text style */
+.text-preset-1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.text-preset-2 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--slate-300);
+}
+
+.qrcodesection {
+  display: flex;
+  align-items: center;
+  padding-top: 150px;
+  margin-bottom: 40px;
+}
+
+/* desktop only */
+@media (min-width: 376px) {
+  .qrcodesection {
+    padding-top: 230px;
+  }
+}
+
+/* Card Component */
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 320px;
+  max-width: 320px;
+  padding: 16px 16px 40px 16px;
+  box-sizing: border-box;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+.card-img {
+  width: 288px;
+  height: 288px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+}
+.card-text {
+  width: 100%;
+  max-width: 288px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+.card-text-title {
+  width: 100%;
+  color: var(--slate-900);
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.card-text-description {
+  width: 100%;
+  color: var(--slate-500);
+  text-align: center;
+  font-size: 15px;
+}
