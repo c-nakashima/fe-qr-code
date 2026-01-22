@@ -31,10 +31,11 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 230px;
   background-color: var(--slate-300);
 }
 
-.qrcodesection {
+.qr {
   display: flex;
   align-items: center;
   padding-top: 150px;
@@ -43,7 +44,7 @@ body {
 
 /* desktop only */
 @media (min-width: 376px) {
-  .qrcodesection {
+  .qr {
     padding-top: 230px;
   }
 }
@@ -60,27 +61,27 @@ body {
   background-color: var(--white);
   border-radius: 20px;
 }
-.card-img {
+.card__img {
   width: 288px;
   height: 288px;
   margin-bottom: 24px;
   border-radius: 10px;
 }
-.card-text {
+.card__body {
   width: 100%;
   max-width: 288px;
   padding-left: 16px;
   padding-right: 16px;
   box-sizing: border-box;
 }
-.card-text-title {
+.card__title {
   width: 100%;
   color: var(--slate-900);
   margin-top: 0;
   margin-bottom: 16px;
   text-align: center;
 }
-.card-text-description {
+.card__description {
   width: 100%;
   color: var(--slate-500);
   text-align: center;
